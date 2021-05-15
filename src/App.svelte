@@ -1,14 +1,22 @@
 <script>
-	export let name;
-
+	import { ProgramDetailsData } from "./store";
 	import ProgramDetails from "./ProgramDetails.svelte";
+
+	$: programName = `PROGRAM: ${$ProgramDetailsData.commandName} (${$ProgramDetailsData.network})`;
+	$: {
+		console.log('-----');
+		console.log($ProgramDetailsData)
+	}
 </script>
 
 <main>
-
 	<div class="container">
-		<h1>Hello {name}!</h1>
+		<h1>{programName}</h1>
 		<ProgramDetails />
+	</div>
+
+	<div class="debug">
+		{JSON.stringify($ProgramDetailsData)}
 	</div>
 </main>
 
@@ -16,8 +24,11 @@
 	.container {
 		width: 1140px;
 		margin: 0 auto;
-		border: 1px solid black;
-		padding: 1rem;
+	}
+
+	.debug {
+		padding: 2rem 0;
+		font-family: monospace;
 	}
 
 	main {

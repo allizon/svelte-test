@@ -1,8 +1,16 @@
 import { writable } from "svelte/store";
 
-const defaultFormData = {
-  commandName: 'some stored command name'
+const defaultProgramDetails = {
+  commandName: 'some stored command name',
+  requestType: [],
+  network: 'NIPR',
+  office: {
+    location: '',
+    status: '',
+    phone: '',
+    dsn: ''
+  }
 }
+export const ProgramDetailsData = writable(defaultProgramDetails);
 
-// Use default state?
-export const FormData = writable(defaultFormData);
+// Other pages get their own states
