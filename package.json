@@ -18,6 +18,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "bootstrap": "^5.0.1",
+    "sirv-cli": "^1.0.0",
+    "svelte-simple-datatables": "^0.1.25",
+    "sveltestrap": "^5.0.2"
   }
 }

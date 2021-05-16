@@ -28,6 +28,11 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.12.tgz#431ec342a7195622f86688bbda82e3166ce8cb28"
   integrity sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==
 
+"@popperjs/core@^2.6.0":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
+  integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
+
 "@rollup/plugin-commonjs@^17.0.0":
   version "17.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-17.1.0.tgz#757ec88737dffa8aa913eb392fade2e45aef2a2d"
@@ -116,6 +121,11 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
+
+bootstrap@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.0.1.tgz#e7939d599119dc818a90478a2a299bdaff037e09"
+  integrity sha512-Fl79+wsLOZKoiU345KeEaWD0ik8WKRI5zm0YSPj2oF1Qr+BO7z0fco6GbUtqjoG1h4VI89PeKJnMsMMVQdKKTw==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -599,10 +609,22 @@ supports-color@^7.0.0:
   dependencies:
     has-flag "^4.0.0"
 
+svelte-simple-datatables@^0.1.25:
+  version "0.1.25"
+  resolved "https://registry.yarnpkg.com/svelte-simple-datatables/-/svelte-simple-datatables-0.1.25.tgz#161870afc0dbb479fc039b169bafcbb33158c142"
+  integrity sha512-Ep+P9ZYJUyQRc3cwLZXN6rR+3sspNzDef6oce3t55E9kytFEQOdTt7dIKkfmRnRxdI7CUPNAZTfKYBOlwdL/dw==
+
 svelte@^3.0.0:
   version "3.38.2"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.38.2.tgz#55e5c681f793ae349b5cc2fe58e5782af4275ef5"
   integrity sha512-q5Dq0/QHh4BLJyEVWGe7Cej5NWs040LWjMbicBGZ+3qpFWJ1YObRmUDZKbbovddLC9WW7THTj3kYbTOFmU9fbg==
+
+sveltestrap@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/sveltestrap/-/sveltestrap-5.0.2.tgz#506a765cb97148bc85cfc26ab5bea8e5f87d05bd"
+  integrity sha512-tCGTTLtQ0hl6w7dOlCI3HJSo7Q4N0kZ147GlILiX8dhQrti0stKl7339ylsiO4MppUwLaSZMA81GTzKKl3wNiw==
+  dependencies:
+    "@popperjs/core" "^2.6.0"
 
 terser@^5.0.0:
   version "5.7.0"
