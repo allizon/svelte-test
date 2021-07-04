@@ -3,5 +3,5 @@
   "bracketSpacing": true,
   "arrowParens": "avoid",
   "svelteAllowShorthand": true,
-  "svelteBracketNewLine": false
+  "svelteBracketNewLine": true
 }

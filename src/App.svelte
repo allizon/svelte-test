@@ -11,7 +11,6 @@
   <header>Draft One v2304</header>
   <div class="columns is-centered">
     <div class="column is-two-thirds">
-      <h1>Hi there.</h1>
       <Stats />
       <Editor />
     </div>
