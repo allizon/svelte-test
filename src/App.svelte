@@ -1,36 +1,33 @@
 <script>
+  import Editor from "./Editor.svelte";
+  import Stats from "./Stats.svelte";
 </script>
 
 <svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-  />
+  <title>Draft One v2304</title>
 </svelte:head>
 
 <main>
-  <div class="container">
-    <h1>Hi there.</h1>
-    This is a new app. I'm testing Svelte. I know this whole dev/deployment thing
-    works, but now I have to figure out what the hell to do with this.
+  <header>Draft One v2304</header>
+  <div class="columns is-centered">
+    <div class="column is-two-thirds">
+      <h1>Hi there.</h1>
+      <Stats />
+      <Editor />
+    </div>
   </div>
+  <footer>footer go here</footer>
 </main>
 
 <style>
-  .container {
-    width: 1140px;
-    margin: 0 auto;
-  }
-
-  .debug {
-    padding: 2rem 0;
-    font-family: monospace;
+  header {
+    height: 144px;
+    background-color: antiquewhite;
+    margin-bottom: 2rem;
   }
 
   main {
     text-align: center;
-    padding: 1em;
-    max-width: 240px;
     margin: 0 auto;
   }
 
