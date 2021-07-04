@@ -19,30 +19,31 @@ let defaultPointsOfContact = [
     pocName: "Allison Holt",
     email: "alholt@example.com",
     roles: ["requestor"],
-    key: "allison-holt",
+    isAdmin: false,
   },
   {
     pocName: "Matt Hudson",
     email: "mhudson@example.com",
-    key: "matt-hudson",
+    roles: ["requestor"],
+    isAdmin: false,
   },
   {
     pocName: "Amy Black",
     email: "amyb@example.com",
     roles: ["government_poc"],
-    key: "amy-black",
+    isAdmin: false,
   },
   {
     pocName: "Elizabeth Harmon",
     email: "grandmaster@example.com",
+    roles: [],
     isAdmin: true,
-    key: "beth-harmon",
   },
   {
     pocName: "Elizabeth Windsor",
     email: "hrh@example.com",
+    roles: [],
     isAdmin: true,
-    key: "elizabeth-windsor",
   },
 ];
 
