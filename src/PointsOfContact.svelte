@@ -46,9 +46,9 @@
   {/each}
 </div>
 
-<button on:click={() => (showModal = true)}>Add New Contact</button>
+<button on:click={() => (showAddModal = true)}>Add New Contact</button>
 
-{#if showModal}
+{#if showAddModal}
   <AddPointOfContact />
 {/if}
 
