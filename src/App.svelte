@@ -1,16 +1,4 @@
 <script>
-  import { ProgramDetailsData } from "./store";
-  import ProgramDetails from "./ProgramDetails.svelte";
-  import PointsOfContact from "./PointsOfContact.svelte";
-
-  let activeTab = "pointsOfContact";
-
-  $: programName = `PROGRAM: ${$ProgramDetailsData.commandName} (${$ProgramDetailsData.network})`;
-  $: {
-    console.log("-----");
-    console.log($ProgramDetailsData);
-  }
-
 </script>
 
 <svelte:head>
@@ -22,38 +10,9 @@
 
 <main>
   <div class="container">
-    <h1>{programName}</h1>
-
-    <div>
-      <a
-        href="#"
-        on:click|preventDefault={() => (activeTab = "programDetails")}
-      >
-        Program Details
-      </a>
-      <a
-        href="#"
-        on:click|preventDefault={() => (activeTab = "pointsOfContact")}
-      >
-        Points of Contact
-      </a>
-      <a
-        href="#"
-        on:click|preventDefault={() => (activeTab = "hostingDetails")}
-      >
-        Hosting Details
-      </a>
-    </div>
-
-    {#if activeTab === "programDetails"}
-      <ProgramDetails />
-    {:else if activeTab === "pointsOfContact"}
-      <PointsOfContact />
-    {/if}
-  </div>
-
-  <div class="debug">
-    {JSON.stringify($ProgramDetailsData)}
+    <h1>Hi there.</h1>
+    This is a new app. I'm testing Svelte. I know this whole dev/deployment thing
+    works, but now I have to figure out what the hell to do with this.
   </div>
 </main>
 
@@ -87,5 +46,4 @@
       max-width: none;
     }
   }
-
 </style>
